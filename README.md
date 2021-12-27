@@ -1,2 +1,2 @@
 # png2tex
-Revolutionizing work
+Revolutionizing work and saving students time
