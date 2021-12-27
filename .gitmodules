@@ -1,0 +1,3 @@
+[submodule "pypotrace"]
+	path = pypotrace
+	url = https://github.com/flupke/pypotrace.git
