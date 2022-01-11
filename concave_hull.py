@@ -38,6 +38,9 @@ class Curvage(Enum):
     Concave  = 1
     Line = 0
     Convex  = -1
+ 
+    def __sub__(self, other):
+        return abs(self.value - other.value)
 
 class Geometry:
     def __init__(self, val):
@@ -71,6 +74,11 @@ class Cardinal(Enum):
     SW = 5
     W  = 6
     NW = 7
+    
+    def __sub__(self, other):
+        val1 = self.value
+        val2 = other.value
+        return min((val1 - val2) % 8, (val2 - val1) % 8)
 
 class Compass:
     def __init__(self, deg):
