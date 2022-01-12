@@ -103,7 +103,7 @@ def direction(P1, P2):
 
 def convert_border(border):
     borderxy = np.array([[x[1], x[0]] for x in border])
-    segments = np.array_split(borderxy, 12)
+    segments = np.array_split(borderxy, 16)
     res = []
     for segment in segments:
         p1 = segment[0]
